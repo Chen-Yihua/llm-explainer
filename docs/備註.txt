@@ -1,0 +1,92 @@
+因為 prompt 字太多了，全部 print 出會很雜，所以只有 print 重要資訊，完整的 prompt 打在這裡
+
+以下是生成測試資料的 prompt(只會問 llm 一次，問完後存成 txt，要用時再打開):
+
+A robot is operating in a grid world and can visit four types of tiles: {red, yellow, blue, green}.
+They correspond to lava (red), recharging (yellow), water (blue), and drying (green) tiles.
+The robot is to visit tiles according to some set of rules. This will be recorded as a sequence of colors.
+    
+Rules:
+1. The sequence must contain at least one yellow tile, i.e., must recharge at some point..
+2. The sequence must not contain any red tiles, i.e., lava must be avoided at all costs.
+3. If the robot has visited blue and then needs to go to yellow, it must visit green immediately before yellow, i.e., the robot must dry off before recharging.
+A positive example must conform to all rules.
+    
+Note that repeated sequential colors can be replaced with a single instance.
+For example:
+- [yellow,yellow,blue] => [yellow, blue]
+- [red,red,blue,green,green,red] => [red,blue,green,red]
+    
+For example:
+- [blue,green,yellow]、[yellow,green,blue] is Positive examples.
+- [green,blue,yellow] is Negative examples.
+        
+Provide 5 Positive examples.
+- Each example has 1–5 elements.
+
+Output format:
+Positive examples:
+- [color1]
+- [color1, color2]
+
+LLM response: Positive examples:- [yellow]- [yellow, blue]- [blue, green, yellow]- [yellow, green]- [yellow, blue, green, yellow]
+
+------------------------------------------------------------------------------------------------------------------
+A robot is operating in a grid world and can visit four types of tiles: {red, yellow, blue, green}.
+They correspond to lava (red), recharging (yellow), water (blue), and drying (green) tiles.
+The robot is to visit tiles according to some set of rules. This will be recorded as a sequence of colors.
+    
+Rules:
+1. The sequence must contain at least one yellow tile, i.e., must recharge at some point..
+2. The sequence must not contain any red tiles, i.e., lava must be avoided at all costs.
+3. If the robot has visited blue and then needs to go to yellow, it must visit green immediately before yellow, i.e., the robot must dry off before recharging.
+A positive example must conform to all rules.
+    
+Note that repeated sequential colors can be replaced with a single instance.
+For example:
+- [yellow,yellow,blue] => [yellow, blue]
+- [red,red,blue,green,green,red] => [red,blue,green,red]
+    
+For example:
+- [blue,green,yellow]、[yellow,green,blue] is Positive examples.
+- [green,blue,yellow] is Negative examples.
+        
+Provide 5 Negative examples.
+- Each example has 1–5 elements.
+
+Output format:
+Negative examples:
+- [color1]
+- [color1, color2]
+        
+LLM response: Negative examples:- [red]- [blue, yellow]- [yellow, blue, yellow]- [green, blue, yellow]- [yellow, red, green]
+
+------------------------------------------------------------------------------------------------------------------
+membershup query:
+
+A robot is operating in a grid world and can visit four types of tiles: {red, yellow, blue, green}.
+They correspond to lava (red), recharging (yellow), water (blue), and drying (green) tiles.
+The robot is to visit tiles according to some set of rules. This will be recorded as a sequence of colors.
+    
+Rules:
+1. The sequence must contain at least one yellow tile, i.e., must recharge at some point..
+2. The sequence must not contain any red tiles, i.e., lava must be avoided at all costs.
+3. If the robot has visited blue and then needs to go to yellow, it must visit green immediately before yellow, i.e., the robot must dry off before recharging.
+A positive example must conform to all rules.
+    
+Note that repeated sequential colors can be replaced with a single instance.
+For example:
+- [yellow,yellow,blue] => [yellow, blue]
+- [red,red,blue,green,green,red] => [red,blue,green,red]
+
+Please briefly answer the following questions to show your work. 
+- Do not answer any other question. 
+- The empty sequence is denoted by '#'
+    
+Output format:
+FINAL_ANSWER: <true, false>
+    
+Question:
+- Is the following sequence a positive example? :  
+
+
