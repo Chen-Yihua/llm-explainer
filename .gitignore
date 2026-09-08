@@ -1,6 +1,6 @@
 # 忽略敏感檔案
-demo/credentials/
-src/main/resources/config.json
+java/credentials/
+java/src/main/resources/config.json
 
 # 忽略 VSCode 設定
 .vscode/
@@ -21,3 +21,22 @@ Thumbs.db
 
 # 忽略日誌檔案
 *.log
+
+# 忽略 Python 虛擬環境與快取
+venv/
+anchor-llm/venv/
+__pycache__/
+*.pyc
+
+# 忽略執行期產生的快取檔案（cache/ 目錄結構會保留）
+cache/*
+!cache/.gitkeep
+*.shelve.bak
+*.shelve.dat
+*.shelve.dir
+
+# 忽略大型本地封存檔
+dist/
+*.tar
+
+.venv/
