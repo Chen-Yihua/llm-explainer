@@ -7,7 +7,7 @@
 | 實驗 | 位置 | 說明 |
 |---|---|---|
 | 機器人格子世界規則學習 | [python/experiments/robot_test_with_diss.py](python/experiments/robot_test_with_diss.py) | 主實驗，為 L\*LM 方法之核心示範：以 LLM 回答成員查詢與等價查詢，透過 aalpy 的 L\* 演算法學習出描述機器人格子世界規則的 DFA，並交由 `diss` 進行策略合成。已以模擬（mock）LLM 完整驗證執行流程 |
-| Tomita grammar 學習 | [python/experiments/tomita_test_with_diss.py](python/experiments/tomita_test_with_diss.py) | 採用不同技術路線之實驗，改以 `lstar`／`lstar_llm` 函式庫實作，透過本機 completion server（`http://127.0.0.1:8080/completion`）回應查詢。尚未驗證其可執行性 |
+| Tomita grammar 學習 | [python/experiments/tomita_test.py](python/experiments/tomita_test.py) | 採用不同技術路線之實驗，改以 `lstar` 函式庫（而非 aalpy）驅動 L\*LM 學習，透過 `Client.py` 呼叫 OpenAI／Gemini 回應查詢。不涉及 `diss`（原檔名 `tomita_test_with_diss.py` 與實際內容不符，已更名）。已以模擬（mock）LLM 驗證 `test_tomita_1`、`test_tomita_2` 皆可完整跑通 |
 | Java 版 LLM API 呼叫測試 | [java/src/test/java/](java/src/test/java/) | `ChatGPTClientTest.java`、`GeminiClientTest.java`，用於驗證 OpenAI／Gemini API 呼叫本身，不涉及自動機學習流程 |
 
 各實驗共用的基礎邏輯（LLM 客戶端、SUL／等價查詢 Oracle 之封裝、DFA 格式轉換工具等）統一置於 [python/lib/](python/lib/)，詳見下方「Usage」與「補充說明」。
