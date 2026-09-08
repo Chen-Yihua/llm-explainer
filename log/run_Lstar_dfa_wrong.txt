@@ -1,0 +1,669 @@
+--搜 引發錯誤 找到錯誤位置
+
+Query Time: 9.14 seconds
+Total Tokens: 1084
+positive_examples :  [['yellow'], ['yellow', 'blue'], ['yellow', 'green'], ['blue', 'green', 'yellow'], ['green', 'yellow'], ['yellow', 'blue', 'green'], ['yellow', 'green', 'blue'], ['green', 'blue', 'green', 'yellow'], ['blue', 'green', 'blue', 'green', 'yellow'], ['green', 'blue', 'green', 'blue', 'yellow']]
+Query Time: 4.84 seconds
+Total Tokens: 816
+negative_examples :  [['red'], ['blue'], ['green'], ['blue', 'yellow'], ['yellow', 'blue', 'yellow'], ['yellow', 'red'], ['blue', 'green', 'yellow', 'blue'], ['yellow', 'blue', 'green', 'red'], ['blue', 'blue', 'yellow'], ['green', 'yellow', 'red']]
+-----------------------------
+ask LLM the following sequence :  green
+Query Time: 2.56 seconds
+Total Tokens: 519
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue
+Query Time: 1.74 seconds
+Total Tokens: 713
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  yellow
+Query Time: 4.21 seconds
+Total Tokens: 647
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  red
+Query Time: 5.96 seconds
+Total Tokens: 713
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  #
+Query Time: 10.07 seconds
+Total Tokens: 1222
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  yellow,green
+Query Time: 2.54 seconds
+Total Tokens: 587
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,blue
+Query Time: 4.24 seconds
+Total Tokens: 713
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,yellow
+Query Time: 1.83 seconds
+Total Tokens: 396
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,red
+Query Time: 4.63 seconds
+Total Tokens: 587
+LLM response :  FINAL_ANSWER: false
+Hypothesis 1: 2 states.
+****************************
+測試正反例
+test positive example:  ['green', 'blue', 'green', 'blue', 'yellow']
+test positive example:  ['blue', 'green', 'blue', 'green', 'yellow']
+test positive example:  ['green', 'blue', 'green', 'yellow']
+test positive example:  ['yellow', 'green', 'blue']
+test positive example:  ['yellow', 'blue', 'green']
+test positive example:  ['green', 'yellow']
+test positive example:  ['blue', 'green', 'yellow']
+test positive example:  ['yellow', 'green']
+test positive example:  ['yellow', 'blue']
+test positive example:  ['yellow']
+test negative example:  ['green', 'yellow', 'red']
+test negative example:  ['blue', 'blue', 'yellow']
+-----------------------------
+ask LLM the following sequence :  blue,blue
+Query Time: 4.11 seconds
+Total Tokens: 779
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow
+Query Time: 4.21 seconds
+Total Tokens: 589
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,green
+Query Time: 4.02 seconds
+Total Tokens: 719
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,blue
+Query Time: 4.17 seconds
+Total Tokens: 719
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,yellow
+Query Time: 2.29 seconds
+Total Tokens: 464
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,red
+Query Time: 3.81 seconds
+Total Tokens: 591
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,green
+Query Time: 3.21 seconds
+Total Tokens: 461
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,blue
+Query Time: 3.42 seconds
+Total Tokens: 717
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,red
+Query Time: 5.07 seconds
+Total Tokens: 651
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green
+Query Time: 4.82 seconds
+Total Tokens: 843
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,yellow
+Query Time: 3.25 seconds
+Total Tokens: 523
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,red
+Query Time: 4.13 seconds
+Total Tokens: 651
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,green,yellow
+Query Time: 2.02 seconds
+Total Tokens: 657
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,blue,yellow
+Query Time: 3.92 seconds
+Total Tokens: 721
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,yellow,yellow
+Query Time: 2.98 seconds
+Total Tokens: 465
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,red,yellow
+Query Time: 5.20 seconds
+Total Tokens: 785
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,green,yellow
+Query Time: 4.46 seconds
+Total Tokens: 591
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,blue,blue,yellow
+Query Time: 3.78 seconds
+Total Tokens: 463
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,red,yellow
+Query Time: 0.43 seconds
+Total Tokens: 463
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow
+Query Time: 4.16 seconds
+Total Tokens: 717
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,yellow,yellow
+Query Time: 5.22 seconds
+Total Tokens: 589
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,red,yellow
+Query Time: 3.63 seconds
+Total Tokens: 653
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  yellow,green,yellow
+Query Time: 5.15 seconds
+Total Tokens: 912
+LLM response :  To determine if the sequence `[yellow, green, yellow]` is a positive example:1. Contains at least one yellow tile: Yes.2. Does not contain any red tiles: Yes.3. Blue to yellow transition rule: Not applicable since there is no blue tile.All rules are satisfied.FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,blue,yellow
+Query Time: 2.08 seconds
+Total Tokens: 525
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  yellow,yellow,yellow
+Query Time: 2.80 seconds
+Total Tokens: 461
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,red,yellow
+Query Time: 2.58 seconds
+Total Tokens: 461
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  green,yellow
+Query Time: 2.19 seconds
+Total Tokens: 459
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  red,yellow
+Query Time: 2.47 seconds
+Total Tokens: 459
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,green,green
+Query Time: 3.60 seconds
+Total Tokens: 657
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,green,green,yellow
+Query Time: 3.08 seconds
+Total Tokens: 595
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,blue,green
+Query Time: 4.24 seconds
+Total Tokens: 721
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,blue,green,yellow
+Query Time: 3.10 seconds
+Total Tokens: 595
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,yellow,green
+Query Time: 4.51 seconds
+Total Tokens: 849
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,yellow,green,yellow
+Query Time: 4.86 seconds
+Total Tokens: 915
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,red,green
+Query Time: 2.58 seconds
+Total Tokens: 465
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,yellow,red,green,yellow
+Query Time: 2.06 seconds
+Total Tokens: 595
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,green,green
+Query Time: 3.10 seconds
+Total Tokens: 463
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,green,green,yellow
+Query Time: 3.68 seconds
+Total Tokens: 721
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,blue,blue,green
+Query Time: 4.14 seconds
+Total Tokens: 719
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,blue,green,yellow
+Query Time: 5.28 seconds
+Total Tokens: 721
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,blue,red,green
+Query Time: 2.92 seconds
+Total Tokens: 591
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,blue,red,green,yellow
+Query Time: 3.99 seconds
+Total Tokens: 465
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,green
+Query Time: 3.69 seconds
+Total Tokens: 715
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,green,yellow
+Query Time: 3.39 seconds
+Total Tokens: 655
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,yellow,green
+Query Time: 4.82 seconds
+Total Tokens: 907
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,yellow,green,yellow
+Query Time: 6.20 seconds
+Total Tokens: 719
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,red,green
+Query Time: 2.40 seconds
+Total Tokens: 461
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,red,green,yellow
+Query Time: 3.77 seconds
+Total Tokens: 527
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  yellow,green,green
+Query Time: 2.90 seconds
+Total Tokens: 589
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,green,green,yellow
+Query Time: 2.21 seconds
+Total Tokens: 463
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,blue,green
+Query Time: 3.39 seconds
+Total Tokens: 589
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,blue,green,yellow
+Query Time: 4.79 seconds
+Total Tokens: 655
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,yellow,green
+Query Time: 3.91 seconds
+Total Tokens: 653
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,yellow,green,yellow
+Query Time: 3.30 seconds
+Total Tokens: 527
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,red,green
+Query Time: 2.91 seconds
+Total Tokens: 589
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  yellow,red,green,yellow
+Query Time: 5.55 seconds
+Total Tokens: 783
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  green,green
+Query Time: 3.66 seconds
+Total Tokens: 523
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  green,green,yellow
+Query Time: 1.29 seconds
+Total Tokens: 461
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  red,green
+Query Time: 3.89 seconds
+Total Tokens: 587
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  red,green,yellow
+Query Time: 3.50 seconds
+Total Tokens: 525
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  yellow,blue,green,green
+Query Time: 2.81 seconds
+Total Tokens: 527
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,blue,green,green,yellow
+Query Time: 3.44 seconds
+Total Tokens: 721
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,blue,blue
+Query Time: 3.20 seconds
+Total Tokens: 589
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,blue,blue,yellow
+Query Time: 4.96 seconds
+Total Tokens: 847
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  yellow,blue,blue,green
+Query Time: 2.30 seconds
+Total Tokens: 527
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,blue,blue,green,yellow
+Query Time: 8.07 seconds
+Total Tokens: 911
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  yellow,blue,yellow,yellow
+Query Time: 4.59 seconds
+Total Tokens: 783
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  yellow,blue,yellow,green
+Query Time: 3.45 seconds
+Total Tokens: 719
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  yellow,blue,yellow,green,yellow
+Query Time: 7.22 seconds
+Total Tokens: 785
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  yellow,blue,red
+Query Time: 2.49 seconds
+Total Tokens: 461
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  yellow,blue,red,yellow
+Query Time: 2.96 seconds
+Total Tokens: 399
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  yellow,blue,red,green
+Query Time: 2.58 seconds
+Total Tokens: 463
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  yellow,blue,red,green,yellow
+Query Time: 5.56 seconds
+Total Tokens: 721
+LLM response :  FINAL_ANSWER: false
+Hypothesis 2: 5 states.
+****************************
+測試正反例
+test negative example:  ['blue', 'blue', 'yellow']
+test negative example:  ['yellow', 'blue', 'green', 'red']
+test negative example:  ['blue', 'green', 'yellow', 'blue'] 引發錯誤
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue 引發錯誤
+Query Time: 5.30 seconds
+Total Tokens: 657
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,green
+Query Time: 3.42 seconds
+Total Tokens: 657
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,green,yellow
+Query Time: 5.48 seconds
+Total Tokens: 915
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,green,green
+Query Time: 2.42 seconds
+Total Tokens: 531
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,green,green,yellow
+Query Time: 3.96 seconds
+Total Tokens: 725
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,blue
+Query Time: 1.64 seconds
+Total Tokens: 593
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,blue,yellow
+Query Time: 9.29 seconds
+Total Tokens: 1171
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,blue,green
+Query Time: 4.02 seconds
+Total Tokens: 657
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,blue,green,yellow
+Query Time: 3.78 seconds
+Total Tokens: 787
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,yellow
+Query Time: 2.57 seconds
+Total Tokens: 593
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,yellow,yellow
+Query Time: 2.77 seconds
+Total Tokens: 787
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,yellow,green
+Query Time: 4.64 seconds
+Total Tokens: 849
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,yellow,green,yellow
+Query Time: 5.71 seconds
+Total Tokens: 1045
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,red
+Query Time: 3.26 seconds
+Total Tokens: 657
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,red,yellow
+Query Time: 6.67 seconds
+Total Tokens: 851
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,red,green
+Query Time: 2.39 seconds
+Total Tokens: 467
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,blue,red,green,yellow
+Query Time: 5.46 seconds
+Total Tokens: 725
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,green
+Query Time: 3.87 seconds
+Total Tokens: 655
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,green,yellow
+Query Time: 3.18 seconds
+Total Tokens: 593
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,green,green
+Query Time: 3.39 seconds
+Total Tokens: 529
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,green,green,yellow
+Query Time: 3.19 seconds
+Total Tokens: 787
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,yellow
+Query Time: 4.72 seconds
+Total Tokens: 719
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,yellow,yellow
+Query Time: 3.67 seconds
+Total Tokens: 529
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,yellow,green
+Query Time: 2.84 seconds
+Total Tokens: 529
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,yellow,green,yellow
+Query Time: 7.97 seconds
+Total Tokens: 1043
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,red
+Query Time: 2.79 seconds
+Total Tokens: 847
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,red,yellow
+Query Time: 4.27 seconds
+Total Tokens: 657
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,red,green
+Query Time: 4.01 seconds
+Total Tokens: 785
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,yellow,red,green,yellow
+Query Time: 4.26 seconds
+Total Tokens: 851
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,green,green
+Query Time: 3.04 seconds
+Total Tokens: 527
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,green,green,yellow
+Query Time: 2.26 seconds
+Total Tokens: 529
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,blue
+Query Time: 2.70 seconds
+Total Tokens: 525
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,blue,yellow
+Query Time: 3.71 seconds
+Total Tokens: 655
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,blue,green
+Query Time: 6.04 seconds
+Total Tokens: 845
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,blue,green,yellow
+Query Time: 2.37 seconds
+Total Tokens: 529
+LLM response :  FINAL_ANSWER: true
+-----------------------------
+ask LLM the following sequence :  blue,green,red
+Query Time: 2.64 seconds
+Total Tokens: 525
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,red,yellow
+Query Time: 2.48 seconds
+Total Tokens: 463
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,red,green
+Query Time: 3.15 seconds
+Total Tokens: 655
+LLM response :  FINAL_ANSWER: false
+-----------------------------
+ask LLM the following sequence :  blue,green,red,green,yellow
+Query Time: 2.96 seconds
+Total Tokens: 529
+LLM response :  FINAL_ANSWER: false
+Hypothesis 3: 5 states.
+****************************
+測試正反例
+test negative example:  ['blue', 'green', 'yellow', 'blue'] 引發錯誤
+Hypothesis 4: 5 states.
+****************************
+測試正反例
+test negative example:  ['blue', 'green', 'yellow', 'blue']
+Hypothesis 5: 5 states.
+****************************
+測試正反例
+test negative example:  ['blue', 'green', 'yellow', 'blue']
+Hypothesis 6: 5 states.
+****************************
+測試正反例
+test negative example:  ['blue', 'green', 'yellow', 'blue']
+Hypothesis 7: 5 states.
+****************************
+測試正反例
+test negative example:  ['blue', 'green', 'yellow', 'blue']
+Hypothesis 8: 5 states.
+****************************
+測試正反例
+test negative example:  ['blue', 'green', 'yellow', 'blue']
+Hypothesis 9: 5 states.
+****************************
+測試正反例
+test negative example:  ['blue', 'green', 'yellow', 'blue']
+Hypothesis 10: 5 states.
+****************************
+測試正反例
+test negative example:  ['blue', 'green', 'yellow', 'blue']
+Hypothesis 11: 5 states.
+****************************
+

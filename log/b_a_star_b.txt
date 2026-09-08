@@ -1,0 +1,379 @@
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b',)
+ask LLM the following sequence :  b
+Query Time: 5.60 seconds
+Total Tokens: 612
+LLM response :  FINAL_ANSWER:false
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('a',)
+ask LLM the following sequence :  a
+Query Time: 5.52 seconds
+Total Tokens: 868
+LLM response :  FINAL_ANSWER:false
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ()
+ask LLM the following sequence :  #
+Query Time: 8.53 seconds
+Total Tokens: 1646
+Query Time: 8.99 seconds
+Total Tokens: 675
+LLM response :  FINAL_ANSWER:false.
+觀察表: [()]
+Hypothesis 1: 1 states.
+------------------------
+Prefixes / E set |()
+------------------------
+()               |False
+========================
+------------------------
+('a',)           |False
+------------------------
+('b',)           |False
+------------------------
+cex:  None
+Query Time: 6.47 seconds
+Total Tokens: 628
+test_sequences :  Positive examples:- [b, a, b]- [b, a, a, b]- [b, a, a, a, b]- [b, a, a, a, a, b]Negative examples:- [b]- [a, b]- [b, b]- [b, a]- [a, b, a]- ['', 'b']
+[['b', 'a', 'b'], ['b', 'a', 'a', 'b'], ['b', 'a', 'a', 'a', 'b'], ['b', 'a', 'a', 'a', 'a', 'b']]
+test sequence :  ['b', 'a', 'b']
+Counterexample found: ['b', 'a', 'b']
+find cex:  ['b', 'a', 'b']
+Counterexample ('b', 'a', 'b')
+process cex:  ('b', 'a', 'b')
+finish extend_set
+finish extend
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'b', 'b')
+ask LLM the following sequence :  b
+Query Time: 3.91 seconds
+Total Tokens: 676
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a
+Query Time: 3.80 seconds
+Total Tokens: 613
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,b
+Query Time: 2.57 seconds
+Total Tokens: 422
+LLM response :  FINAL_ANSWER:true
+ask LLM the following sequence :  b,a,b,b
+Query Time: 4.19 seconds
+Total Tokens: 743
+LLM response :  FINAL_ANSWER:false.
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'b', 'a')
+ask LLM the following sequence :  b
+Query Time: 5.06 seconds
+Total Tokens: 740
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a
+Query Time: 4.37 seconds
+Total Tokens: 741
+LLM response :  FINAL_ANSWER:false.
+ask LLM the following sequence :  b,a,b
+Query Time: 9.59 seconds
+Total Tokens: 1254
+LLM response :  FINAL_ANSWER:true
+ask LLM the following sequence :  b,a,b,a
+Query Time: 4.47 seconds
+Total Tokens: 743
+LLM response :  FINAL_ANSWER:false
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'b')
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'a')
+ask LLM the following sequence :  b
+Query Time: 3.80 seconds
+Total Tokens: 612
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a
+Query Time: 5.24 seconds
+Total Tokens: 997
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,a
+Query Time: 4.82 seconds
+Total Tokens: 550
+LLM response :  FINAL_ANSWER:false
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'b')
+ask LLM the following sequence :  b
+Query Time: 7.29 seconds
+Total Tokens: 932
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,b
+Query Time: 5.73 seconds
+Total Tokens: 741
+LLM response :  FINAL_ANSWER:false
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a')
+finish update_obs_table
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'b', 'b', 'b')
+ask LLM the following sequence :  b
+Query Time: 5.57 seconds
+Total Tokens: 676
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a
+Query Time: 8.59 seconds
+Total Tokens: 1509
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,b
+Query Time: 3.38 seconds
+Total Tokens: 423
+LLM response :  FINAL_ANSWER:true
+ask LLM the following sequence :  b,a,b,b
+Query Time: 3.38 seconds
+Total Tokens: 616
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,b,b,b
+Query Time: 4.52 seconds
+Total Tokens: 808
+LLM response :  FINAL_ANSWER:false
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'b', 'a', 'b')
+ask LLM the following sequence :  b
+Query Time: 5.06 seconds
+Total Tokens: 932
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a
+Query Time: 5.40 seconds
+Total Tokens: 677
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,b
+Query Time: 5.85 seconds
+Total Tokens: 998
+LLM response :  FINAL_ANSWER:true.
+ask LLM the following sequence :  b,a,b,a
+Query Time: 3.40 seconds
+Total Tokens: 615
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,b,a,b
+Query Time: 5.14 seconds
+Total Tokens: 872
+LLM response :  FINAL_ANSWER:false
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'a', 'b')
+ask LLM the following sequence :  b
+Query Time: 6.05 seconds
+Total Tokens: 1060
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a
+Query Time: 4.31 seconds
+Total Tokens: 741
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,a
+Query Time: 3.98 seconds
+Total Tokens: 678
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,a,b
+Query Time: 11.03 seconds
+Total Tokens: 1063
+LLM response :  FINAL_ANSWER:true
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'b', 'b')
+ask LLM the following sequence :  b
+Query Time: 7.52 seconds
+Total Tokens: 996
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,b
+Query Time: 3.87 seconds
+Total Tokens: 614
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,b,b
+Query Time: 5.71 seconds
+Total Tokens: 870
+LLM response :  FINAL_ANSWER:false
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('a', 'b')
+ask LLM the following sequence :  a
+Query Time: 4.69 seconds
+Total Tokens: 804
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  a,b
+Query Time: 3.18 seconds
+Total Tokens: 549
+LLM response :  FINAL_ANSWER:false
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'b', 'b')
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'b')
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'b')
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b',)
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'b', 'b', 'a', 'b')
+ask LLM the following sequence :  b
+Query Time: 3.52 seconds
+Total Tokens: 612
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a
+Query Time: 2.84 seconds
+Total Tokens: 485
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,b
+Query Time: 6.94 seconds
+Total Tokens: 550
+LLM response :  FINAL_ANSWER:true
+ask LLM the following sequence :  b,a,b,b
+Query Time: 8.41 seconds
+Total Tokens: 1127
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,b,b,a
+Query Time: 3.54 seconds
+Total Tokens: 616
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,b,b,a,b
+Query Time: 6.62 seconds
+Total Tokens: 1257
+LLM response :  FINAL_ANSWER:false
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'b', 'a', 'a', 'b')
+ask LLM the following sequence :  b
+Query Time: 5.80 seconds
+Total Tokens: 996
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a
+Query Time: 11.54 seconds
+Total Tokens: 1509
+LLM response :  FINAL_ANSWER:false.
+ask LLM the following sequence :  b,a,b
+Query Time: 4.01 seconds
+Total Tokens: 614
+LLM response :  FINAL_ANSWER:true
+ask LLM the following sequence :  b,a,b,a
+Query Time: 5.08 seconds
+Total Tokens: 807
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,b,a,a
+Query Time: 5.28 seconds
+Total Tokens: 936
+LLM response :  FINAL_ANSWER:false.
+ask LLM the following sequence :  b,a,b,a,a,b
+Query Time: 9.23 seconds
+Total Tokens: 1641
+LLM response :  FINAL_ANSWER:false
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'a', 'a', 'b')
+ask LLM the following sequence :  b
+Query Time: 4.82 seconds
+Total Tokens: 804
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a
+Query Time: 5.21 seconds
+Total Tokens: 805
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,a
+Query Time: 3.62 seconds
+Total Tokens: 614
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,a,a
+Query Time: 4.11 seconds
+Total Tokens: 616
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,a,a,a,b
+Query Time: 2.68 seconds
+Total Tokens: 425
+LLM response :  FINAL_ANSWER:true
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'b', 'a', 'b')
+ask LLM the following sequence :  b
+Query Time: 7.18 seconds
+Total Tokens: 1188
+LLM response :  FINAL_ANSWER:false.
+ask LLM the following sequence :  b,b
+Query Time: 3.91 seconds
+Total Tokens: 549
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,b,a
+Query Time: 5.55 seconds
+Total Tokens: 934
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  b,b,a,b
+Query Time: 5.63 seconds
+Total Tokens: 935
+LLM response :  FINAL_ANSWER:false
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('a', 'a', 'b')
+ask LLM the following sequence :  a
+Query Time: 6.18 seconds
+Total Tokens: 996
+LLM response :  FINAL_ANSWER:false
+ask LLM the following sequence :  a,a
+Query Time: 4.60 seconds
+Total Tokens: 805
+LLM response :  FINAL_ANSWER:false.
+ask LLM the following sequence :  a,a,b
+Query Time: 3.49 seconds
+Total Tokens: 550
+LLM response :  FINAL_ANSWER:false
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'b', 'a', 'b')
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'a', 'b')
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('b', 'a', 'b')
+<bound method CacheSUL.query of <aalpy.base.SUL.CacheSUL object at 0x000001DCF18B6CC0>>
+input_seq ('a', 'b')
+觀察表: [(), ('b',), ('b', 'a'), ('b', 'a', 'b')]
+input_seq ('b', 'a', 'b')
+Hypothesis 2: 4 states.
+----------------------------------------------------
+Prefixes / E set     |()    |('b',) |('a', 'b')
+----------------------------------------------------
+()                   |False |False  |(False, False)
+----------------------------------------------------
+('b',)               |False |False  |(False, True)
+----------------------------------------------------
+('b', 'a')           |False |True   |(False, True)
+----------------------------------------------------
+('b', 'a', 'b')      |True  |False  |(False, False)
+====================================================
+----------------------------------------------------
+('a',)               |False |False  |(False, False)
+----------------------------------------------------
+('b', 'b')           |False |False  |(False, False)
+----------------------------------------------------
+('b', 'a', 'a')      |False |True   |(False, True)
+----------------------------------------------------
+('b', 'a', 'b', 'a') |False |False  |(False, False)
+----------------------------------------------------
+('b', 'a', 'b', 'b') |False |False  |(False, False)
+----------------------------------------------------
+cex:  ('b', 'a', 'b')
+Query Time: 8.34 seconds
+Total Tokens: 1393
+test_sequences :  Based on the provided positive and negative examples, we can deduce the pattern or language that these strings belong to. Here's a detailed analysis and formulation of the pattern:### Pattern Analysis1. Positive Examples:   - `[b, a, b]`   - `[b, a, a, b]`   - `[b, a, a, a, b]`   - `[b, a, a, a, a, b]`   Characteristics:   - Starts with `b`.   - Ends with `b`.   - Contains one or more `a`s in between.2. Negative Examples:   - `[b]` (Only `b`, no `a`s)   - `[a, b]` (Starts with `a`)   - `[b, b]` (No `a`s between `b`s)   - `[b, a]` (Ends with `a`)   - `[a, b, a]` (Starts and ends with `a`)   - `['', 'b']` (Empty string followed by `b`)   These examples violate one or more of the positive characteristics.### Formal Definitions1. Regular Expression (Regex):   - The language can be represented by the regex:     ```     b a+ b     ```     - Explanation:       - `b`: Starts with `b`.       - `a+`: Contains one or more `a`s.       - `b`: Ends with `b`.2. Context-Free Grammar (CFG):   - A CFG that generates this language can be defined as:     ```     S → b A b     A → a A | a     ```     - Explanation:       - `S` is the start symbol.       - `S` produces `b`, followed by `A`, followed by `b`.       - `A` ensures that there's at least one `a` by allowing one `a` or recursively adding more `a`s.3. Finite Automaton:   - States:     - `q0`: Start state.     - `q1`: After reading the first `b`.     - `q2`: After reading one or more `a`s.     - `q3`: Accepting state after reading the final `b`.   - Transitions:     - `q0` --`b`-- `q1`     - `q1` --`a`-- `q2`     - `q2` --`a`-- `q2` (loop for multiple `a`s)     - `q2` --`b`-- `q3`   - Acceptance Condition:     - The string is accepted if the automaton ends in `q3`.### SummaryThe language defined by your examples consists of strings that:- Start with the character `b`.- Contain one or more `a` characters in the middle.- End with the character `b`.All strings adhering to this pattern are accepted (positive examples), while those that deviate by missing `a`s, having incorrect start or end characters, or having extra/missing characters are rejected (negative examples).If you need further assistance, such as implementing this pattern in a specific programming language or tool, feel free to ask!
+find cex:  None
+-----------------------------------
+Learning Finished.
+Learning Rounds:  2
+Number of states: 4
+Time (in seconds)
+  Total                : 639.3
+  Learning algorithm   : 624.47
+  Conformance checking : 14.83
+Learning Algorithm
+ # Membership Queries  : 17
+ # MQ Saved by Caching : 11
+ # Steps               : 58
+Equivalence Query
+ # Membership Queries  : 1
+ # Steps               : 0
+-----------------------------------
+learned_dfa :  digraph learnedModel {
+s0 [label="s0"];
+s1 [label="s1"];
+s2 [label="s2"];
+s3 [label="s3", shape=doublecircle];
+s0 -> s0 [label="a"];
+s0 -> s1 [label="b"];
+s1 -> s2 [label="a"];
+s1 -> s0 [label="b"];
+s2 -> s2 [label="a"];
+s2 -> s3 [label="b"];
+s3 -> s0 [label="a"];
+s3 -> s0 [label="b"];
+__start0 [shape=none, label=""];
+__start0 -> s0 [label=""];
+}

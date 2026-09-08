@@ -1,0 +1,12 @@
+Query Time: 6.50 seconds
+Total Tokens: 1217
+positive_examples :  [['yellow'], ['green', 'yellow'], ['blue', 'green', 'yellow'], ['yellow', 'green'], ['green', 'blue', 'green', 'yellow'], ['blue', 'green', 'blue', 'green', 'yellow'], ['yellow', 'blue', 'green'], ['green', 'yellow', 'blue', 'green'], ['blue', 'green', 'yellow', 'green'], ['green', 'blue', 'green', 'blue', 'yellow']]
+Query Time: 8.35 seconds
+Total Tokens: 1484
+Query Time: 7.91 seconds
+Total Tokens: 1484
+Query Time: 10.91 seconds
+Total Tokens: 1484
+Query Time: 4.29 seconds
+Total Tokens: 743
+negative_examples :  [['blue'], ['green', 'blue', 'green'], ['blue', 'green'], ['green'], ['red'], ['blue', 'red'], ['green', 'red', 'yellow'], ['yellow', 'red'], ['blue', 'yellow'], ['yellow', 'blue', 'yellow']]

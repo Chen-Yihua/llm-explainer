@@ -1,0 +1,27 @@
+==============================
+the 0 iteration of DISS.
+run lstar
+hypothesis digraph learnedModel {
+s0 [label="s0"];
+s1 [label="s1", shape=doublecircle];
+s0 -> s0 [label="red"];
+s0 -> s1 [label="yellow"];
+s0 -> s0 [label="blue"];
+s0 -> s0 [label="green"];
+s1 -> s0 [label="red"];
+s1 -> s1 [label="yellow"];
+s1 -> s1 [label="blue"];
+s1 -> s1 [label="green"];
+__start0 [shape=none, label=""];
+__start0 -> s0 [label=""];
+}
+
+Hypothesis 1: 2 states.
+****************************
+測試正反例
+test positive example (eq_query):  ['yellow']
+pass eq_query
+test negative example (eq_query):  ['blue', 'yellow', 'blue', 'yellow']
+fail eq_query
+-----------------------------
+membership query :  blue,yellow,blue
