@@ -1,0 +1,17 @@
+<configuration>
+    <!-- 根日誌級別設置為 INFO，過濾掉 DEBUG 訊息 -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+    <!-- 過濾 Netty 的 DEBUG 訊息，設置為 WARN -->
+    <logger name="io.grpc.netty" level="WARN" />
+    <logger name="io.grpc.netty.shaded" level="WARN" />
+
+    <!-- Console 輸出設置 -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+</configuration>
